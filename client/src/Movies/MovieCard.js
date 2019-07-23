@@ -1,7 +1,8 @@
 import React from 'react';
+import addToSavedList from "../App"
 
 const MovieCard = props => {
-  console.log(props)
+  // console.log(props)
   return (
 
     <div className="save-wrapper">
@@ -21,7 +22,7 @@ const MovieCard = props => {
           </div>
         ))}
       </div>
-      <div className="save-button">Save</div>
+      {props.button}
     </div>
 
   );
